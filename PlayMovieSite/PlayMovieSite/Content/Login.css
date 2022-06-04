@@ -1,0 +1,101 @@
+﻿body {
+    background-color: black;
+}
+
+/* TITULO */
+.PlayMovie {
+    display: flex;
+    background-color: black;
+    font-family: 'Book Antiqua';
+    
+}
+
+#Play {
+    color: #FECA76;
+    font-weight: bold;
+}
+
+#Movie {
+    color: white;
+    font-weight: bold;
+}
+
+.caja {
+    background-color: red;
+    margin: auto;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.Imagen {
+    box-sizing: border-box;
+    background-color: #171617;
+    width: 320px;
+    height: 420px;
+}
+
+#imagen {
+    background-color: #171617;
+    width: 320px;
+    height: 420px;
+}
+
+/* LOGIN */
+.texto {
+    margin-top: 0;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Book Antiqua';
+    color: white;
+    margin-bottom: 30px;
+}
+
+.login-box {
+    box-sizing: border-box;
+    background-color: #171617;
+    font-family: 'Book Antiqua';
+    font-size: 2.1rem;
+    color: white;
+    width: 320px;
+    height: 420px;
+    text-align: center;
+    justify-content: center;
+    padding: 35px;
+}
+
+label {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+#email, #password {
+    background-color: gray; /*rgba(47, 47, 47, 0.35);*/
+    color: white;
+    text-align: center;
+    border: none;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+input {
+    margin-bottom: 45px;
+}
+
+#enviar {
+    cursor: pointer;
+    background-color: #FECA76;
+    color: black;
+    width: 160px;
+    height: 43px;
+    font-weight: bold;
+}
+
+/* MENSAJE DE ERROR */
+.alert {
+    margin: auto;
+    width: 30%;
+}

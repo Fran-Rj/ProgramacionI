@@ -1,0 +1,244 @@
+﻿@model PlayMovieSite.Models.Usuario
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/Edits.css" />
+
+<style>
+    body {
+        background-color: darkgray;
+    }
+
+    .edit-box {
+        margin: auto;
+        box-sizing: border-box;
+        background-color: transparent;
+        font-family: 'Book Antiqua';
+        color: black;
+        width: 463px;
+        height: 300px;
+        font-size: 2rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #nombreUsuario, #email, #password {
+        background-color: white;
+        color: black;
+        width: 500px;
+        height: 40px;
+        border-radius: 5px;
+        border-color: black;
+        text-align: center;
+    }
+
+    input {
+        margin-bottom: 30px;
+    }
+
+    #btnenviar {
+        cursor: pointer;
+        background-color: #FECA76;
+        color: black;
+        width: 120px;
+        height: 40px;
+        color: black;
+        margin-top: 10px;
+    }
+
+    #box {
+        display: flex;
+        background-color: transparent;
+        width: 400px;
+    }
+
+    #labels {
+        text-align: start;
+        background-color: transparent;
+        padding: 15px;
+        width: 200px;
+        height: 213px;
+    }
+
+    label {
+        margin-top: 7px;
+        margin-bottom: 35px;
+    }
+
+    #text-box {
+        text-align: start;
+        width: 310px;
+        height: 213px;
+        background-color: transparent;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #boton {
+        background-color: red;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        color: black;
+        font-family: 'Book Antiqua';
+        font-weight: bold;
+    }
+</style>
+
+<h2 a>Actualizar datos</h2>
+<br />
+<body>
+    <div class="edit-box">
+        @using (Html.BeginForm("Edit", "Account", FormMethod.Post))
+        {
+            @Html.HiddenFor(a => a.idUsuario)
+            <div id="box">
+                <div id="labels">
+                    <label>Nombre</label>
+                    <br />
+                    <label>Email</label>
+                    <br />
+                    <label>Contraseña</label>
+                </div>
+                <div id="text-box">
+                    @Html.TextBoxFor(a => a.nombreUsuario)
+                    @Html.TextBoxFor(a => a.email)
+                    @Html.TextBoxFor(a => a.password)
+                </div>
+            </div>
+
+            <input type="submit" value="Aceptar" id="btnenviar" />
+        }
+    </div>
+</body>
+
+@*<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Edit</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="../JavaScript/JavaScript.js"></script>
+
+
+            <style>
+                #imgAvatar {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                #cuenta {
+                    padding: 10px;
+                }
+
+                body {
+                    background-color: silver;
+                }
+
+                #cuenta {
+                    background-color: white;
+                }
+
+                #box-datos {
+                    width: 300px;
+                    height: 176px;
+                    display: flex;
+                    background-color: white;
+                    padding: 5px;
+                }
+
+                #labels {
+                    width: 100px;
+                }
+
+                #lbl1, #lbl2, #lbl3, #lbl4 {
+                    border: none;
+                    margin-top: 3px;
+                }
+
+                #inpt1, #inpt2, #inpt3, #inpt4 {
+                    margin-top: 3px;
+                    border-style: solid;
+                    background-color: rgb(221 221 221);
+                }
+
+                #btnSubir {
+                    width: 400px;
+                    text-align: center;
+                }
+
+                #imgUserH {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                #imgUser {
+                    width: 100%;
+                }
+
+                #box-group {
+                    width: 730px;
+                    align-items: center;
+                    display: flex;
+                    background-color: red;
+                    margin: auto;
+                }
+            </style>
+    </head>
+    <body>
+        @*<header>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown link
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Configuracion</a></li>
+                    <li><a class="dropdown-item" href="https://localhost:44303/Account/Edit">Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+                </ul>
+            </div>
+        </header>*@
+@*<br />
+        <br />
+        <fieldset>
+            <h3 class="row justify-content-center">Datos de registro</h3>
+            <div class="container" id="box-group">
+                <div class="container" id="box-datos">
+                    <div id="labels">
+                        <label class="form-control" id="lbl1">Nombre/s:</label>
+                        <label class="form-control" id="lbl2">Apellido/s:</label>
+                        <label class="form-control" id="lbl3">Usuario:</label>
+                        <label class="form-control" id="lbl4">Clave:</label>
+                    </div>
+                    <div id="inputs">
+                        <input type="text" class="form-control" id="inpt1" placeholder="ej. Annie" />
+                        <input type="text" class="form-control" id="inpt2" placeholder="ej. Hathway" />
+                        <input type="text" class="form-control" id="inpt3" placeholder="ej. Annie" />
+                        <input type="password" class="form-control" id="inpt4" placeholder="Contraseña" />
+                    </div>
+                </div>
+                <br />
+                <div class="container form-control" id="btnSubir">
+                    <div class="">
+                        <img src="~/Imagenes/User.png" class="" id="imgUser" />
+                    </div>
+                    <br />
+                    <div class="" id="box-imagen">
+                        <input type="file" class="form-control" id="btUpImg" onchange="mostrarimagen(this)" />
+                    </div>
+                    <br />
+                    <div class="">
+                        <input type="submit" class="form-control btn btn-dark" value="Aplicar" id="btnAplicar" />
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </body>
+    </html>*@

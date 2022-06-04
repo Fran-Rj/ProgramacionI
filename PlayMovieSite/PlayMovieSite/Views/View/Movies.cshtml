@@ -1,0 +1,137 @@
+﻿@model List<PlayMovieSite.Models.Usuario>
+
+@{
+    ViewBag.Title = "Movies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/Movies.css" />
+
+<body>
+    @*<div class="box">
+        <div class="container-1">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" id="search" placeholder="Search..." />
+        </div>
+    </div>*@
+    <div class="nombreSitio">
+        <div class="PlayMovie">
+            <h1 id="Play">Play</h1>
+            <h1 id="Movie">Movie</h1>
+        </div>
+        <div class="subtitulo">
+            <h2 id="sientete">Siéntete &#160;</h2> @*&#160; Es para dar un espacio*@
+            <h2 id="premium">Premium</h2>
+        </div>
+    </div>
+    <a href="https://localhost:44303/View/Ander" target="_blank">
+        <div class="publicidad">
+            <div class="info">
+                <img src="~/Imagenes/Ander.png" id="imagenA" />
+                <h4 id="tqConocer">Anderson te quiere conocer</h4>
+            </div>
+            <h4 id="aKilometros">A 2 KILOMETROS DE TI</h4>
+        </div>
+    </a>
+    @*<div class="cuenta">
+        <img src="~/Imagenes/Avatar.jpg" id="avatar"/>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <th>Usuario</th>
+            </thead>
+            <tbody>
+                @foreach (var ok in Model)
+                 {
+                    <tr>               
+                        <td>@ok.nombreUsuario</td>
+                    </tr>
+                 }
+            </tbody>
+        </table>
+    </div>*@
+    <div class="Peliculas">
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/One Piece.jpg" class="imagen" alt="One Piece" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP" >One Piece</h4>
+            </a>
+        </div>
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/Full Metal.jpg" class="imagen" alt="Full Metal" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">Full Metal...</h4>
+            </a>
+        </div>
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/Jujutsu Kaisen.jpg" class="imagen" alt="Jkaisen" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">Jujutsu...</h4>
+            </a>
+        </div>
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/Goku.jpg" class="imagen" alt="Goku" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">Dragon...</h4>
+            </a>
+        </div>
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/Dr. Strange.jpg" class="imagen" alt="Strange" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">Dr. Strange</h4>
+            </a>
+        </div>
+
+    </div>
+    <div class="Peliculas">
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/Proyecto X.jpg" class="imagen" alt="Proyecto X" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">Proyecto X</h4>
+            </a>
+        </div>
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/Son como niños.jpg" class="imagen" alt="Como Niños" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">Son como niños</h4>
+            </a>
+        </div>
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/Pirañaconda.jpg" class="imagen" alt="Pirañaconda" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">Pirañaconda</h4>
+            </a>
+        </div>
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/John Wick.jpg" class="imagen" alt="John Wick" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">John Wick</h4>
+            </a>
+        </div>
+        <div class="Imagen">
+            <a href="https://localhost:44303/View/Details">
+                <img src="~/Imagenes/Carnada.jpg" class="imagen" alt="Carnada" />
+            </a>
+            <a href="https://localhost:44303/View/Details">
+                <h4 class="nameP">Carnada</h4>
+            </a>
+        </div>
+    </div>
+</body>

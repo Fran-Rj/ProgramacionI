@@ -1,0 +1,70 @@
+﻿body {
+    background-color: black;
+}
+
+.present {
+    margin-top: 80px;
+}
+
+/* DESCRIPCION DE LAS PELICULAS */
+.Imagen {
+    color: white;
+    font-family: 'Book Antiqua'; 
+    background: black;
+    padding: 20px;
+    display: flex;
+}
+
+
+#imagen {
+    width: 180px;
+    height: 180px;
+    color: white;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.contenido {
+    margin-left: 3%;
+    background-color: black;
+    display: flex;
+}
+
+#cap {
+    color: #FECA76;
+}
+
+#stars {
+    width: 160px;
+    height: 50px;
+}
+
+.boton {
+    margin-left: 500px;
+    margin-top: 70px;
+    max-width: 100%;
+    height: auto;
+}
+
+#btnVer {
+    width: 150px;
+    height: 50px;
+    background-color: #FECA76;
+    font-family: 'Book Antiqua';
+    color: black;
+    font-size: 2rem;
+    justify-content: center;
+    line-height: 40px;
+    border-radius: 5px;
+    /*margin-left: 500px;
+    margin-top: 70px;*/
+}
+
+.descripcion {
+    background-color: black;
+    font-family: 'Book Antiqua';
+    color: white;
+    font-size: 2rem;
+    text-align: justify;
+    padding: 20px;
+}

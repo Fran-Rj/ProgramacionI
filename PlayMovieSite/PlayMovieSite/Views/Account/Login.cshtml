@@ -1,0 +1,33 @@
+﻿@model PlayMovieSite.Models.Usuario
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/Login.css"/>
+
+<body>
+    <div class="PlayMovie">
+        <h1 id="Play">Play</h1>
+        <h1 id="Movie">Movie</h1>
+    </div>
+    <br />
+    <div class="caja">
+        <div class="Imagen">
+            <img src="~/Imagenes/Neo.png" id="imagen" />
+        </div>
+        <div class="login-box">
+            <h2 class="texto">Bienvenido</h2>
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+             {
+                <label>Usuario</label>
+                <input type="text" name="email" id="email" autocomplete="off" required=""/>
+                <label>Contraseña</label>
+                <input type="password" name="password" id="password" required=""/>
+                <input type="submit" value="Iniciar sesión" id="enviar" />
+             }
+        </div>
+    </div>
+</body>
+

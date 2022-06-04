@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PlayMovieModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'PlayMovie.dbo.Imagen' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="Imagen">
+          <Property Name="id" Type="int" />
+          <Property Name="imagen" Type="image" />
+        </EntityType>-->
+  <EntityType Name="Tarjeta">
+    <Key>
+      <PropertyRef Name="idTarjeta" />
+    </Key>
+    <Property Name="idTarjeta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="numTarjeta" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombreUsuario" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PlayMovieModelStoreContainer">
+    <EntitySet Name="Tarjeta" EntityType="Self.Tarjeta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

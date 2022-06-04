@@ -1,0 +1,44 @@
+﻿body {
+    background-color: darkgray;
+}
+
+.edit-box {
+    margin: auto;
+    box-sizing: border-box;
+    background-color: darkgray;
+    font-family: 'Book Antiqua';
+    color: black;
+    width: 320px;
+    height: 400px;
+    font-size: 2rem;
+    padding: 30px;
+    display: flex;
+    text-align: center;
+}
+
+#nombreUsuario, #email, #password {
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+}
+
+input {
+    margin-bottom: 30px;
+}
+
+#enviar {
+    cursor: pointer;
+    background-color: #FECA76;
+    color: black;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: black;
+}
+/* TARJETA */
+/*.box-edit {
+    width:
+}*/

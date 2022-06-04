@@ -1,0 +1,139 @@
+﻿body{
+    background-color: black;
+}
+
+.generalDiv{
+    position: relative;
+    margin-top: 50px;
+}
+
+/* TITULO: PLAYMOVIE*/
+.PlayMovie {
+    display: flex;
+    font-family: 'Book Antiqua';
+}
+
+
+#Play {
+    font-weight: bold;
+    color: #FECA76;
+}
+
+#Movie {
+    font-weight: bold;
+    color: white;
+}
+
+.subtitulo{
+    display: flex;
+    font-family: 'Book Antiqua';
+    width: 30%;
+}
+
+#sientete {
+    font-weight: bold;
+    color: white;
+}
+
+#premium {
+    font-weight: bold;
+    color: #FECA76;
+}
+
+.nombreSitio{
+    
+}
+
+
+/* ENCABEZADO */
+.container {
+    position: relative;
+}
+
+.encabezado{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    position: absolute;
+    top: 40%; /* Nivel de altura */
+    left: 40%; /* Desplazamiendo hacia la izquierda*/
+    margin: -30px 0 0 -30px;
+}
+
+#conviertete {
+    font-weight: bold;
+    justify-content: right;
+    font-family: 'Book Antiqua';
+    color: white;
+    font-weight: bold;
+}
+
+#Premium {
+    font-weight: bold;
+    color: #FECA76;
+    font-family: 'Book Antiqua';
+    font-weight: bold;
+}
+
+/* BOTONES */
+.opciones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.btn {
+    text-decoration-color: none;
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    font-family: 'Book Antiqua';
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    line-height: 200px; /*Para centrar verticalmente el texto*/
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+#btntexto{
+    font-family: 'Book Antiqua';
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 35%;
+}
+
+#btntexto:hover {
+    color: #FECA76;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* CUENTA */
+.cuenta {
+    justify-content: center;
+    text-align: center;
+    background-color: silver;
+    width: 20%;
+    top: 15%;
+    left: 90%;
+    transform: translate(-15% -90%);
+}
+
+/* AVATAR */
+#avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

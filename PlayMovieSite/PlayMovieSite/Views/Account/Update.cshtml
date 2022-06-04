@@ -1,0 +1,68 @@
+﻿@model PlayMovieSite.Models.Tarjeta
+
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-color: darkgray;
+    }
+
+    .box-edit {
+        margin: auto;
+        background-color: transparent;
+        width: 300px;
+        height: 120px;
+        padding: 10px;
+        font-family: 'Book Antiqua';
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #btnAceptar {
+        margin-top: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    #numTarjeta {
+        border-radius: 5px;
+        width: 170px;
+        height: 40px;
+        text-align: center;
+    }
+
+    #btnAceptar {
+        width: 90px;
+        height: 35px;
+        background-color: burlywood;
+        color: black;
+    }
+
+    h2 {
+        text-align: center; 
+        color: black;
+        font-family: 'Book Antiqua';
+        font-weight: bold;
+    }
+</style>
+
+<h2>Actualizar registro</h2>
+<br />
+<body>
+    <div class="box-edit">
+        @using (Html.BeginForm("Update", "Account", FormMethod.Post))
+         {
+            @Html.HiddenFor(a => a.idTarjeta)
+            <div id="content">
+                <label>N° Tarjeta</label>
+                 @Html.TextBoxFor(a => a.numTarjeta)
+            </div>          
+            <input type="submit" value="Aceptar" id="btnAceptar"/>
+         }
+    </div>
+</body>

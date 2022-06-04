@@ -1,0 +1,167 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../JavaScript/JavaScript.js"></script>
+</head>
+<body>
+    <header>
+        <style>
+            #cuenta {
+                padding: 10px;
+            }
+
+            body {
+                background-color: silver;
+            }
+
+            #cuenta {
+                background-color: white;
+            }
+
+            nav ul li ul {
+                display: none;
+            }
+
+            nav ul li:hover ul {
+                display: block;
+                margin-left: 0;
+            }
+
+            nav ul li {
+                list-style: none;
+            }
+
+            ul, li, a {
+                text-decoration: none;
+            }
+
+            #box-datos {
+                width: 300px;
+                height: 176px;
+                display: flex;
+                background-color: white;
+                padding: 5px;
+            }
+
+            #labels {
+                width: 100px;
+            }
+
+            #lbl1, #lbl2, #lbl3, #lbl4 {
+                border: none;
+                margin-top: 3px;
+            }
+
+            #inpt1, #inpt2, #inpt3, #inpt4 {
+                margin-top: 3px;
+                border-style: solid;
+                background-color: rgb(221 221 221);
+            }
+
+            #btnSubir {
+                width: 400px;
+                text-align: center;
+            }
+
+            #imgAvatar {
+                width: 50px;
+                height: 50px;
+            }
+
+            #imgUser {
+                width: 100%;
+            }
+
+            #box-group {
+                width: 900px;
+                align-items: center;
+                display: flex;
+                background-color: red;
+                margin: auto;
+            }
+        </style>
+
+        <div class="dropdown text-end">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="~/Imagenes/User.png" id="imgAvatar" />
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Configuracin</a></li>
+                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+            </ul>
+        </div>
+
+        @*<div id="cuenta">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                @*<img src="~/Imagenes/User.png" class="rounded-circle" id="imgAvatar" />@
+                            </a>
+                            <a href="#">Icono ▼</a>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Nuevo</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Configuación</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Perfil</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>*@
+    </header>
+    <h3 class="row justify-content-center">Datos de registro</h3>
+    <form>
+        <div class="container" id="box-group">
+            <div class="container" id="box-datos">
+                <div id="labels">
+                    <label class="form-control" id="lbl1">Nombre/s:</label>
+                    <label class="form-control" id="lbl2">Apellido/s:</label>
+                    <label class="form-control" id="lbl3">Usuario:</label>
+                    <label class="form-control" id="lbl4">Clave:</label>
+                </div>
+                <div id="inputs">
+                    <input type="text" class="form-control" id="inpt1" placeholder="ej. Annie" />
+                    <input type="text" class="form-control" id="inpt2" placeholder="ej. Hathway" />
+                    <input type="text" class="form-control" id="inpt3" placeholder="ej. Annie" />
+                    <input type="password" class="form-control" id="inpt4" placeholder="Contraseña" />
+                </div>
+            </div>
+            <br />
+            <div class="container form-control" id="btnSubir">
+                <div class="">
+                    <img src="~/Imagenes/User.png" class="" id="imgUser" />
+                </div>
+                <br />
+                <div class="" id="box-imagen">
+                    <input type="file" class="form-control" id="btUpImg" onchange="mostrarimagen(this)" />
+                </div>
+                <br />
+                <div class="">
+                    <input type="submit" class="form-control btn btn-dark" value="Aplicar" id="btnAplicar" />
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

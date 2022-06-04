@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "See";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/See.css" />
+
+<body>
+    <div class="box">
+        <div class="video">
+            <video src="~/Imagenes/One Piece - Tráiler.mp4" controls id="video"></video>
+        </div>
+        <div id="boton">
+            <button class="btn btn-warning" type="button">
+                @Html.ActionLink("Volver", "Movies")
+            </button>
+        </div>  
+        <a href="https://localhost:44303/View/Ander" target="_blank">
+            <div class="publicidad">
+                <div class="info">
+                    <img src="~/Imagenes/Ander.png" id="imagenA" />
+                    <h4 id="tqConocer">Anderson te quiere conocer</h4>
+                </div>
+                <h4 id="aKilometros">A 2 KILOMETROS DE TI</h4>
+            </div>
+        </a>
+    </div>
+</body>

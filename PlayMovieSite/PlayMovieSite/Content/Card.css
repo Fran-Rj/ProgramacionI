@@ -1,0 +1,80 @@
+﻿body {
+    background-color: black;
+}
+
+/* TITULO */
+.PlayMovie {
+    font-family: 'Book Antiqua';
+    display: flex;
+}
+
+
+#Play {
+    font-weight: bold;
+    color: #FECA76;
+}
+
+#Movie {
+    font-weight: bold;
+    color: white;
+}
+
+.subtitulo {
+    display: flex;
+    font-family: 'Book Antiqua';
+    width: 30%;
+}
+
+#sientete {
+    font-weight: bold;
+    color: white;
+}
+
+#premium {
+    font-weight: bold;
+    color: #FECA76;
+}
+
+.nombreSitio {
+    font-weight: bold;
+}
+
+/* TARJETA/REGISTRO */
+.Tarjeta-box {
+    margin: auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    width: 300px;
+    height: 330px;
+    font-family: 'Book Antiqua';
+    font-size: 2.2rem;
+    color: black;
+    text-align: center;
+    padding: 40px;
+}
+
+label {
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 45px;
+}
+
+#numTarjeta {
+    width: 220px;
+    height: 45px;
+    background-color: rgba(196, 196, 196, 0.5);
+    border-color: rgba(196, 196, 196, 0.5);
+    text-align: center;
+}
+
+#btnAceptar {
+    width: 130px;
+    height: 45px;
+    background: #FECA76;
+    border-color: #FECA76;
+    border-radius: 7px;
+}

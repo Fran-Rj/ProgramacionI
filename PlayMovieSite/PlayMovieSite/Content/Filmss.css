@@ -1,0 +1,111 @@
+﻿body {
+    background-color: black;
+}
+
+/* TITULO */
+.PlayMovie {
+    width: 20%;
+    display: flex;
+    font-family: 'Book Antiqua';
+}
+
+#Play {
+    font-weight: bold;
+    color: #FECA76;
+}
+
+#Movie {
+    font-weight: bold;
+    color: white;
+}
+
+.subtitulo {
+    display: flex;
+    font-family: 'Book Antiqua';
+    width: 30%;
+}
+
+#sientete {
+    font-weight: bold;
+    color: white;
+}
+
+#premium {
+    font-weight: bold;
+    color: #FECA76;
+}
+
+.nombreSitio {
+    background-color: blacK;
+}
+
+/* BARRA DE BUSQUEDA */
+/*.container-1 input#search {
+    width: 300px;
+    height: 50px;
+    background: white;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}*/
+
+/* PRESENTACION DE LAS PELICULAS */
+.Peliculas {
+    background-color: black;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.Imagen {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 50px;   
+    justify-content: center;
+}
+
+.imagen {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+}
+
+.nameP {
+    font-family: 'Book Antiqua';
+    color: white;
+    font-weight: bold;
+}
+
+.nameP:hover {
+    color: gold;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+Imagen, a:hover {
+    color: gold;
+    text-decoration: none;
+}
+
+/* CUENTA */
+.cuenta {
+    justify-content: center;
+    text-align: center;
+    background-color: silver;
+    width: 20%;
+}
+
+/* AVATAR */
+#avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

@@ -1,0 +1,120 @@
+﻿@model PlayMovieSite.Models.Tarjeta
+
+@{
+    ViewBag.Title = "Card";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<link rel="stylesheet" href="~/Content/Card.css" />*@
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    /*.padre {
+        /*position: relative;/
+        background-color: red;
+        text-align: center;
+    }*/
+
+    /* TITULO */
+    .PlayMovie {
+        font-family: 'Book Antiqua';
+        display: flex;
+    }
+
+
+    #Play {
+        font-weight: bold;
+        color: #FECA76;
+    }
+
+    #Movie {
+        font-weight: bold;
+        color: white;
+    }
+
+    .subtitulo {
+        display: flex;
+        font-family: 'Book Antiqua';
+        width: 30%;
+    }
+
+    #sientete {
+        font-weight: bold;
+        color: white;
+    }
+
+    #premium {
+        font-weight: bold;
+        color: #FECA76;
+    }
+
+    .nombreSitio {
+        font-weight: bold;
+    }
+
+    /* TARJETA/REGISTRO */
+    .Tarjeta-box {
+        margin: auto;
+        border-radius: 20px;
+        box-sizing: border-box;
+        background-color: white;
+        width: 300px;
+        height: 330px;
+        font-family: 'Book Antiqua';
+        font-size: 2.2rem;
+        color: black;
+        text-align: center;
+        padding: 40px;
+    }
+
+    label {
+        margin-bottom: 45px;
+        font-weight: bold;
+    }
+
+    input {
+        margin-bottom: 45px;
+    }
+
+    #numTarjeta {
+        width: 220px;
+        height: 45px;
+        background-color: rgba(196, 196, 196, 0.5);
+        border-color: rgba(196, 196, 196, 0.5);
+        text-align: center;
+    }
+
+    #btnAceptar {
+        width: 130px;
+        height: 45px;
+        background: #FECA76;
+        border-color: #FECA76;
+        border-radius: 7px;
+    }
+</style>
+
+<body>
+    <div class="nombreSitio">
+        <div class="PlayMovie">
+            <h1 id="Play">Play</h1>
+            <h1 id="Movie">Movie</h1>
+        </div>
+        <div class="subtitulo">
+            <h2 id="sientete">Siéntete &#160;</h2> @*&#160: Es para dar un espacio*@
+            <h2 id="premium">Premium</h2>
+        </div>
+    </div>
+    @*<div class="padre">*@
+    <div class="Tarjeta-box">
+        @using (Html.BeginForm("Card", "Account", FormMethod.Post))
+        {
+            <label id="texto">Ingresa el número de tu Tarjeta de Crédito</label>
+            <input type="text" name="numTarjeta" id="numTarjeta" required="" pattern="[0-9]{7}" maxlength="7" autocomplete="off" />
+            <input type="submit" value="Aceptar" id="btnAceptar" />
+        }
+    </div>
+    @*</div>*@
+</body>

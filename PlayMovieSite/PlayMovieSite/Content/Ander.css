@@ -1,0 +1,49 @@
+﻿body {
+    background-color: red;
+}
+
+/* PUBLICIDAD */
+.publicidad {
+    margin-top: 200px;
+    margin: auto;
+    width: 330px;
+    height: 230px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    top: 20%;
+    left: 55%;
+    transform: translate(-20% -55%)
+}
+
+.info {
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    height: 110px;
+    width: 295px;
+    display: flex;
+    padding: 5px;
+}
+
+#imagenA {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#tqConocer {
+    color: black;
+    font-family: 'Book Antiqua';
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+#aKilometros{
+    margin-top: 30px;
+    color: black;
+    font-family: 'Book Antiqua';
+    font-weight: bold;
+}

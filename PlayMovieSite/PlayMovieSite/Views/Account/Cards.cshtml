@@ -1,0 +1,32 @@
+﻿@model List<PlayMovieSite.Models.Tarjeta>
+
+@{
+    ViewBag.Title = "Cards";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 style="text-align: center; font-weight: bold;" >Registros de Tarjetas de Crédito/Débito</h3>
+<br /><br />
+<body style="font-family: 'Book Antiqua';">
+    <div style="width: 50%; font-size: 120%; margin: auto;">
+        <table class="table table-bordered table-striped">
+            <th style="text-align: center;">Id</th>
+            <th style="text-align: center;">Número de Tarjeta</th>
+            <th style="text-align: center;">Acciones</th>
+            <tbody>
+                @foreach (var ok in Model)
+                 {
+                    <tr style="text-align: center;">  
+                        <td>@ok.idTarjeta</td>
+                        <td>@ok.numTarjeta</td>
+                        <td>
+                            @Html.ActionLink("Eliminar", "Remove", new { id = ok.idTarjeta })
+                             | 
+                            @Html.ActionLink("Actualizar", "Update", new { id = ok.idTarjeta })
+                        </td>
+                    </tr>
+                 }
+            </tbody>
+        </table>
+    </div>
+</body>
